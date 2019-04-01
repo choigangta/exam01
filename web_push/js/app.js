@@ -10,8 +10,6 @@ var config = {
 
 firebase.initializeApp(config);
 
-console.log("aaaaaaaaaaaaaaa");
-
 const messaging = firebase.messaging();
 
 messaging.requestPermission()
@@ -20,7 +18,7 @@ messaging.requestPermission()
         // console.log('Have permission');
         return messaging.getToken();
     })
-    .then(function () {
+    .then(function (token) {
         alert(token);
         console.log("token: ", token);
     })
