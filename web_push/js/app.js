@@ -14,11 +14,12 @@ const messaging = firebase.messaging();
 
 messaging.requestPermission()
     .then(function () {
-        alert("Permission.")
-        console.log('Have permission');
+        alert("Permission." + messaging.getToken())
+        // console.log('Have permission');
         return messaging.getToken();
     })
     .then(function () {
+        alert(token);
         console.log("token: ", token);
     })
     .catch(function (err) {
