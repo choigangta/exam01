@@ -1,7 +1,7 @@
 // importScripts('https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js')
-importScripts('./firebase-app.js')
+importScripts('/exam01/web_push/firebase-app.js')
 // importScripts('https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js')
-importScripts('./firebase-messaging.js')
+importScripts('/exam01/web_push/firebase-messaging.js')
 
 // Initialize Firebase
 var config = {
