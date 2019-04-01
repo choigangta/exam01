@@ -10,6 +10,8 @@ var config = {
 
 firebase.initializeApp(config);
 
+console.log("aaaaaaaaaaaaaaa");
+
 const messaging = firebase.messaging();
 
 messaging.requestPermission()
