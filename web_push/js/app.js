@@ -14,6 +14,7 @@ const messaging = firebase.messaging();
 
 messaging.requestPermission()
     .then(function () {
+        alert("Permission.")
         console.log('Have permission');
         return messaging.getToken();
     })
@@ -22,7 +23,6 @@ messaging.requestPermission()
     })
     .catch(function (err) {
         console.log('Error Occured.');
-
     });
 
 messaging.onMessage(function (playload) {
